@@ -1,16 +1,18 @@
 // alles mit diesem anfang '//' wird vom programm nicht verarbeitet - wird meistens als kommentarfunktion genutzt
 // anzahl an spalten für die aufgabenstellung
 const rows = 8 // in total 
+
 // spaltenbezeichnungen
 const cols = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
-// node js's - (programmiersprache) weise sachen auszugeben
 
+// node js's - (programmiersprache) weise sachen auszugeben
 process.stdout.write('a) \n')
+
 // da die aufgabenstellung den spaltenbeginn mit 8 fordert, setzen wir die 8 als start und 'schleifen' uns via "row--" runter. solange bis die 1 erreicht ist
-// die erste schleife, benennen wir sie einfach als hauptschleife ist für die spalten zuständig
+// die erste schleife, benennen wir sie einfach als hauptschleife ist für die reihen zuständig
 for (let row = rows; row >= 1; row--) {
     // die innere schleife ist für die spalten zuständig
-    // hier setzen wir den index des arrays (oder wie auch immer das in java heißt) auf den anfang -> 'A' und machen das solange bis wir das ende erreicht haben
+    // hier setzen wir den index des arrays (oder wie auch immer das in java heißt) auf den anfang (0) -> das resultiert dann auf den Wert 'A' und machen das solange bis wir das ende erreicht haben
     // pro schleife erweitern wir den index um 1 (col++)
     for (let col = 0; col < cols.length; col++) {
         // hier setzen wir die basis ausgabe
